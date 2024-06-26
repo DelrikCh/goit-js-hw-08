@@ -1,0 +1,22 @@
+.gallery-image {
+    cursor: pointer; /* Курсор у вигляді покажчика, щоб підкреслити, що зображення можна натиснути */
+    transition: transform 0.3s ease; /* Плавна анімація зміни розміру */
+}
+
+.gallery-image:hover, .gallery-image:focus {
+    transform: scale(1.044); /* Збільшення зображення при наведенні або фокусі */
+}
+
+.gallery {
+    list-style: none; /* Видалення маркерів списку */
+    margin: 0; /* Видалення стандартних відступів списку */
+    padding: 0; /* Видалення стандартних падінгів списку */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    gap: 20px 24px; /* Вертикальний гап 20px, горизонтальний гап 24px */
+    padding: 24px 156px; /* Паддінги зверху і знизу 24px, зліва і зправа 156px */
+}
+
+.gallery li {
+    list-style-type: none; /* Видалення маркерів для кожного елемента списку */
+}
